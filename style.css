@@ -285,8 +285,6 @@
 /*---------ABOUT------*/
 .about{
     background: #ffffff;
-    padding: 10rem 0;
-    padding-top: 15rem;
 }
 .about .about_text h2{
     color: #ffa700;
@@ -307,6 +305,15 @@
 .about .about_text{
     margin-left: 15rem;
 }
+.about .about_wrapper .Image{
+    position: relative;
+}
+.about .about_wrapper .Image .Overlay{
+    position: absolute;
+    top: 0;
+    opacity: 50%;
+}
+
 
 @media screen and (max-width:500px){
     .about .about_wrapper{
@@ -314,13 +321,12 @@
     }
     .about .about_text{
         text-align: center;
-        margin: 5rem 0;
-    max-width: 60rem;
+        margin: 1rem 0;
+        max-width: 60rem;
     }
     .about img{
         margin-right: 0;
         width: 20rem;
-        margin-bottom: 3rem;
     }
     .about .about_text h2{
         max-width: fit-content;
