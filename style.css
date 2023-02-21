@@ -286,6 +286,7 @@
 /*---------ABOUT------*/
 .about{
     background: #ffffff;
+    padding: 8rem 0;
 }
 .about .about_text h2{
     color: #ffa700;
@@ -341,7 +342,7 @@
 /*-------SERVICES---------*/
 .hm-services{
     background: #2b2b2b;
-    padding: 12rem 0;
+    padding: 8rem 0;
 }
 .hm-services .hm-services_item i{
     font-size: 5rem;
