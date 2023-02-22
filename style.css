@@ -316,8 +316,6 @@
     top: 0;
     opacity: 50%;
 }
-
-
 @media screen and (max-width:500px){
     .about .about_wrapper{
        flex-direction: column;
@@ -482,6 +480,7 @@
 /*-------FOOTER------*/
 .footer{
     background: #080808;
+    padding: 2rem 0;
 }
 .footer .footer_text i{
     color: #575555;
@@ -489,7 +488,6 @@
 .footer .footer_text{
     display: flex; 
     align-items: center;
-    justify-content: space-between;
 }
 .footer .footer_text ul{
     display: flex;
@@ -497,33 +495,160 @@
 .footer .footer_text ul li{
     margin-right: 1rem;
 }
-.footer .footer_text p{
-    display: inline-block;
-    font-size: 1.5rem;
+.footer .footer_wrapper{
+   justify-content: space-between;
+   display: flex;
 }
-.footer .footer_text .copy p{
-    display: inline-block;
+.footer .copy p{
     text-transform: uppercase;
 }
 .footer .footer_text i:hover{
     color: #ffa700;
 }
+@media screen and (max-width:500px){
+    .footer .footer_wrapper {
+        display: block;
+        text-align: center;
+    }
+    .footer .footer_text{
+      display: block;
+    }
+    .footer .footer_text ul{
+        justify-content: center;
+    }
 
+    
+}
+/*-------About Me------*/
+.aboutme{
+    padding: 5rem 0;
+    padding-top: 15rem;
+}
+.aboutme .aboutme_text p{
+    font-size: 2rem;
+    text-align: justify;
+    max-width: 60rem;
+}
+.aboutme .aboutme_text h2{
+    color: #ffa700;
+    font-size: 8rem;
+    font-weight: 600;
+}
 
+.aboutme .aboutme_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0;
+}
+.aboutme .aboutme_text ul{
+    font-size: 4rem;
+    display: flex;
+    padding: 2rem 0;
+}
+.aboutme .aboutme_text ul li {
+   margin-right: 3rem;
+}
+.aboutme .aboutme_text i{
+    color: #ffa700;
+}
+.aboutme .aboutme_text i:hover{
+    color: #000000;
+}
+.aboutme .chev{
+    color: #ffa700;
+    font-size: 5rem;
+    text-align: center;
+}
+@media screen and (max-width:500px){
+    .aboutme .aboutme_wrapper{
+        flex-direction: column-reverse;
+        display: flex;
+        padding: 0 5rem;
+    }
+    .aboutme .aboutme_wrapper .aboutme_text{
+        text-align: center;
+    }
+    .aboutme .aboutme_text h2{
+        text-align: center;
+        font-size: 5rem;
+        padding: 2rem 0;
+    }
+    .aboutme img{
+        margin-right: 0;
+        width: 20rem;
+        margin-bottom: 3rem;
+    }
+    .aboutme .chev{
+    color: #ffa700;
+    font-size: 5rem;
+    text-align: center;
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*---------RECENTS PROJECT----------*/
+.project{
+    background:#080808;
+    padding: 5rem;
+}
+.project .project_title h2{
+    color: #ffa700;
+    font-size: 4rem;
+    font-weight: 600;
+}
+.project .project_title p{
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.project .project_title{
+    padding: 2rem;
+}
+.project .project_items{
+    background-color: #ffffff;
+    border-radius: 5%;
+    margin: 2rem;
+    align-items: center;
+}
+.project .project_items h2{
+    color: #ffa700;
+    font-weight: bold;
+    margin: 2rem;
+}
+.project .project_items img{
+    width: 100%;
+}
+.project .project_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.project .project_items p{
+    margin: 2rem 0;
+    text-align: justify;
+    margin: 2rem;
+    font-size: 1.8rem;
+}
+@media screen and (max-width:500px){
+    .project{
+        display: flex;
+    }
+    .project .project_wrapper{
+       display: block;
+    }
+    .project .project_items{
+        text-align: center;
+        margin: 0;
+    }
+    .project .project_title p{
+        color: #ffffff;
+        margin: 2rem 0;
+        text-align: center;
+    }
+    .project .project_title h2{
+        text-align: center;
+        font-size: 3rem;
+    }
+}
 
 
 /*-------REPEATABLE PATTERNS------*/
