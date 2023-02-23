@@ -115,10 +115,6 @@
     max-width: 100%;
   }
 
-
-
-
-
 /*--------GRID---------*/
 .container{
     max-width: 140rem;
@@ -126,7 +122,7 @@
     padding: 1rem;
     margin: 0 auto;
 }
-@media screen and(max-width:468px){
+@media screen and(max-width:500px){
     .container{
         width: 100%;
     }
@@ -173,7 +169,7 @@
     justify-content: space-between;
 }
 .header .header__nav ul li:hover a{
-    color: rgb(255, 9, 9);
+    color:#ffa700;
 }
 .toggle_menu{
     display: none;
@@ -187,7 +183,6 @@
     border-radius: 5rem;
     transition: 1s ease;
 }
-
 .toggle_menu.open span:first-child{
     transform: translate(0,10px) rotate(225deg);
     transition: .5s ease;
@@ -200,6 +195,7 @@
     transform: translate(0,-6px) rotate(-225deg);
     transition: .5s ease;
 }
+
 
 @media screen and (max-width:500px){
     .toggle_menu{
@@ -633,7 +629,7 @@
 }
 @media screen and (max-width:500px){
     .project{
-        display: flex;
+        display: block;
     }
     .project .project_wrapper{
        display: block;
@@ -657,7 +653,7 @@
     background: #ffffff;
     padding: 5rem 0;
 }
-.updates_wrapper{
+.updates .updates_wrapper{
     display: grid;
     grid-template-columns: 2.5fr 1.5fr;
     grid-gap: 5rem;
@@ -741,9 +737,9 @@
     font-weight: 600;
 }
 .updates .updates_categrp{
-    padding: 10rem 0;
-    padding-bottom: 8rem;
+    padding-top: 10rem;
     border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 8rem;
 }
 .updates .rp_items_text{ 
    margin-left: 2rem;
@@ -754,15 +750,263 @@
 .updates .rp_items_text p{ 
   padding-top: 3rem;
 }
+.tags h3{
+    color: #ffa700;
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 8rem;
+}
+.tags a{
+    text-transform: uppercase;
+    color: #000000;
+}
+.updates .tags .tags_button{
+    padding-bottom: 1rem;
+}
+.updates .tags .tags_button .but{
+    margin-left: 1rem;
+}
+
+@media screen and (max-width:500px){
+    .updates .updates_wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .updates .updates_author ul li{
+        margin-right: 2rem;
+        font-size: 1.2rem;
+    }
+    .updates {
+        padding-top: 2rem;
+    }
+    .updates .updates_categrp{
+        padding-top: 4rem;
+    }
+    .tags h3{
+        padding-top: 5rem;
+    }
+    .updates .updates_items{
+        margin: 2rem;
+    }
+    .updates .updates_categ{
+        margin: 2rem;
+    }
+    .updates .updates_categrp{
+        margin: 2rem;
+    }
+    .updates .tags{
+        margin: 1rem;
+    }
+    
+}
+/*-----------SERVICES------------*/
+.services{
+    background: #ffffff;
+    padding: 10rem 0;
+    padding-top: 20rem;
+    
+}
+.services .services_text h1{
+    color: #ffa700;
+    font-size: 6.5rem;
+    font-weight: 800;
+    max-width: 50rem;
+    line-height: 1.2;
+}
+.services .services_text{
+    margin-left: 15rem;
+}
+.services .services_text p{
+    max-width: 50rem;
+    text-align: justify;
+    margin: 3rem 0;
+}
+.services .services_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.services .services_wrapper .services-img{
+    position: relative;
+}
+.services .services_wrapper .services-img .OLay{
+    position: absolute;
+    top: 0;
+    opacity: 50%;
+}
+.services .services_text .price p{
+    font-size: 1.5rem;
+    margin: .5rem 0;
+}
+.services .services_text .price{
+    padding-top: 3rem;
+    font-style: italic;
+}
+.services .services_text .price h3{
+    color: #ffa700;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.services .chevron{
+    color: #ffa700;
+    font-size: 5rem;
+    text-align: center;
+}
+.services .chevron a{
+    color: #ffa700;
+}
 
 
 
+/*-----------GRAPHICS--------------*/
+.graphics{
+    background: #1d1d1d;
+    padding: 5rem 0;
+}
+.graphics .graphics_text h1{
+    color: #ffa700;
+    font-size: 8rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+.graphics .graphics_text{
+    margin-left: 15rem;
+}
+.graphics .graphics_text p{
+    max-width: 50rem;
+    text-align: justify;
+    margin: 3rem 0;
+    color: #ffffff;
+}
+.graphics .graphics_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2rem;
+}
+.graphics .graphics_text .price h3{
+    color: #ffa700;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.graphics .graphics_text .price p{
+    font-size: 1.5rem;
+    margin: .5rem 0;
+}
+.graphics .graphics_text .price{
+    padding-top: 3rem;
+    font-style: italic;
+}
+.graphics .chevron{
+    color: #ffa700;
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 3rem;
+}
+.graphics .chevron a{
+    color: #ffa700;
+}
+.web{
+    background: #ffffff;
+    padding: 5rem 0;
+    
+}
+.web .web_text h1{
+    color: #ffa700;
+    font-size: 6.5rem;
+    font-weight: 800;
+    max-width: 50rem;
+    line-height: 1.2;
+}
+.web .web_text{
+    margin-left: 15rem;
+}
+.web .web_text p{
+    max-width: 50rem;
+    text-align: justify;
+    margin: 3rem 0;
+}
+.web .web_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.web .web_wrapper .web-img{
+    position: relative;
+}
+.web .web_wrapper .web-img .OLay{
+    position: absolute;
+    top: 0;
+    opacity: 50%;
+}
+.web .web_text .price p{
+    font-size: 1.5rem;
+    margin: .5rem 0;
+}
+.web .web_text .price{
+    padding-top: 3rem;
+    font-style: italic;
+}
+.web .web_text .price h3{
+    color: #ffa700;
+    font-size: 3rem;
+    font-weight: 600;
+}
 
-
-
-
-
-
+@media screen and (max-width:500px){
+    .services{
+        padding-bottom: 3rem;
+    }
+    .services .services_wrapper{
+        flex-direction: column-reverse;
+    }
+    .services .services_text{
+        text-align: center;
+        margin: 1rem 0;
+        max-width: 60rem;
+    }
+    .services .services_text h1{
+        font-size: 5rem;
+    }
+    .services .services_text .price p{
+        text-align: center;
+    }
+    .graphics .graphics_wrapper{
+        flex-direction: column;
+        margin: 2rem;
+    }
+    .graphics .graphics_text{
+        text-align: center;
+        margin: 1rem 0;
+        max-width: 60rem;
+    }
+    .graphics .graphics_text h1{
+        font-size: 5rem;
+    }
+    .graphics .graphics_text .price p{
+        text-align: center;
+    }
+    .graphics{
+        padding-bottom: 3rem;
+    }
+    .web{
+        padding-bottom: 3rem;
+    }
+    .web .web_wrapper{
+        flex-direction: column-reverse;
+    }
+    .web .web_text{
+        text-align: center;
+        margin: 1rem 0;
+        max-width: 60rem;
+    }
+    .web .web_text h1{
+        font-size: 5rem;
+    }
+    .web .web_text .price p{
+        text-align: center;
+    }
+}
 
 
 /*-------REPEATABLE PATTERNS------*/
@@ -772,12 +1016,26 @@
     display: inline-block;
     border: 1px solid transparent;
 }
+.but{
+    padding: 2rem 5rem;
+    border-radius: 5rem;
+    display: inline-block;
+    border: 1px solid #2b2b2b;
+}
 .bg--yellow{
     background: #ffa700;
     color: #ffffff;
 }
 .bg--black{
     background: #2b2b2b;
+    color: #ffffff;
+}
+.bg-white{
+    background: #ffffff;
+    color: #000000;
+}
+.bg-white:hover{
+    background: #000000;
     color: #ffffff;
 }
 .bg--yellow:hover{
