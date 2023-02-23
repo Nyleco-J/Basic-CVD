@@ -560,6 +560,9 @@
     font-size: 5rem;
     text-align: center;
 }
+.aboutme .chev a{
+    color: #ffa700;
+}
 @media screen and (max-width:500px){
     .aboutme .aboutme_wrapper{
         flex-direction: column-reverse;
@@ -580,10 +583,10 @@
         margin-bottom: 3rem;
     }
     .aboutme .chev{
-    color: #ffa700;
     font-size: 5rem;
     text-align: center;
     }
+    
 }
 
 /*---------RECENTS PROJECT----------*/
@@ -649,6 +652,70 @@
         font-size: 3rem;
     }
 }
+/*-------UPDATES------*/
+.updates{
+    background: #ffffff;
+    padding: 5rem 0;
+}
+.updates_wrapper{
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr;
+}
+.updates .updates_title{
+    padding-top: 15rem;
+}
+.updates .updates_title h1{
+    color: #ffa700;
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+.updates .updates_author ul{
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+.updates .updates_author ul li i{
+   margin-right: 1rem;
+}
+.updates .updates_author ul li{
+    margin-right: 4rem;
+}
+.updates .updates_text h3{
+    color: #ffa700;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.updates .updates_text p{
+    margin: 2.5rem 0;
+    text-align: justify;
+}
+.updates .updates_text a{
+   color: #ffa700;
+}
+.updates .updates_items img{
+    width: 100%;
+}
+.updates .updates_items{
+    padding: 5rem 0;
+}
+.updates .updates_items:last-child{
+    padding-bottom: 0;
+    padding-top: 5rem;
+}
+.updates .updates_items:not(:last-child){
+    padding: 5rem 0;
+    border-bottom: 1px solid #000000;
+}
+
+
+
+
+
+
+
+
+
 
 
 /*-------REPEATABLE PATTERNS------*/
