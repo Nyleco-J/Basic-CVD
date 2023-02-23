@@ -660,6 +660,7 @@
 .updates_wrapper{
     display: grid;
     grid-template-columns: 2.5fr 1.5fr;
+    grid-gap: 5rem;
 }
 .updates .updates_title{
     padding-top: 15rem;
@@ -705,7 +706,53 @@
 }
 .updates .updates_items:not(:last-child){
     padding: 5rem 0;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #d3d3d3;
+}
+.updates .updates_categ{
+    padding: 5rem 0;
+}
+.updates .updates_categ h3{
+    color: #ffa700;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.updates .updates_categ table{
+   width: 100%;
+   margin-top: 3rem;
+}
+.updates .updates_categ table tr{
+    height: 5rem;
+}
+.updates .updates_categ{
+    padding-bottom: 8rem;
+    border-bottom: 1px solid #d3d3d3;
+}
+/*------------UPDATES CATEGORY---------------*/
+.updates .rp_items{ 
+    display: flex;
+    margin-bottom: 3rem;
+}
+.updates h3{ 
+    margin-bottom: 5rem;
+}
+.updates .updates_categrp h3{
+    color: #ffa700;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.updates .updates_categrp{
+    padding: 10rem 0;
+    padding-bottom: 8rem;
+    border-bottom: 1px solid #d3d3d3;
+}
+.updates .rp_items_text{ 
+   margin-left: 2rem;
+}
+.updates .rp_items_text h4{ 
+   font-weight: 600;
+}
+.updates .rp_items_text p{ 
+  padding-top: 3rem;
 }
 
 
